@@ -1076,7 +1076,7 @@
     <h2>Celebrate your birthday or any occasion with us at Sin Menlyn</h2>
     <p>Fill out our quick form to reserve your special night at Sin Menlyn.</p>
     <div class="modal-buttons">
-	<img src ="birthday11.JPG" alt="birthday"  width="400" height="300">
+	<img src ="birthday11.jpg" alt="birthday"  width="400" height="300">
 
       <a href="https://docs.google.com/forms/d/e/1FAIpQLScpqfwofWLjZJMiSJkbNJRLZ_jwjbKu13mEICpF1mhB62LK1A/viewform?usp=header" target="_blank" class="modal-button">
         <i class="fas fa-birthday-cake"></i> Book Birthday
@@ -1104,46 +1104,19 @@
         }
 		
 		// Birthday Modal Functions
-  function openBirthdayModal() {
-    document.getElementById('birthdayModal').style.display = 'block';
-  }
-  
-  function closeBirthdayModal() {
-    document.getElementById('birthdayModal').style.display = 'none';
-    // Set cookie to remember user closed the modal
-    setCookie('birthdayModalClosed', 'true', 1); // 1 day
-  }
-  
-  // Cookie functions
-  function setCookie(name, value, days) {
-    var expires = "";
-    if (days) {
-      var date = new Date();
-      date.setTime(date.getTime() + (days*24*60*60*1000));
-      expires = "; expires=" + date.toUTCString();
-    }
-    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
-  }
-  
-  function getCookie(name) {
-    var nameEQ = name + "=";
-    var ca = document.cookie.split(';');
-    for(var i=0;i < ca.length;i++) {
-      var c = ca[i];
-      while (c.charAt(0)==' ') c = c.substring(1,c.length);
-      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-    }
-    return null;
-  }
-  
-  // Show popup after 7 seconds if it hasn't been closed before
-  window.addEventListener('load', function() {
-    if(getCookie('birthdayModalClosed') !== 'true') {
-      setTimeout(function() {
-        openBirthdayModal();
-      }, 7000); // 7 seconds
-    }
-  });
+
+window.addEventListener('load', function() {
+  // Remove the cookie check
+  setTimeout(function() {
+    openBirthdayModal();
+  }, 7000); // 7 seconds delay before showing
+});
+
+/
+function closeBirthdayModal() {
+  document.getElementById('birthdayModal').style.display = 'none';
+
+}
     </script>
 </body>
 </html>
