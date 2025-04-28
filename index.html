@@ -413,7 +413,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 10px;
-			 background: url('greek.jpg') no-repeat center center fixed;
+			 background: url('temple.jpg') no-repeat center center fixed;
 			  background-size: cover;
         }
 
@@ -1103,20 +1103,21 @@
             }
         }
 		
-		// Birthday Modal Functions
-
-window.addEventListener('load', function() {
-  // Remove the cookie check
-  setTimeout(function() {
-    openBirthdayModal();
-  }, 7000); // 7 seconds delay before showing
-});
-
-/
-function closeBirthdayModal() {
-  document.getElementById('birthdayModal').style.display = 'none';
-
-}
+ // Birthday Modal Functions
+  function openBirthdayModal() {
+    document.getElementById('birthdayModal').style.display = 'block';
+  }
+  
+  function closeBirthdayModal() {
+    document.getElementById('birthdayModal').style.display = 'none';
+  }
+  
+  // Show popup every time the page loads
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      openBirthdayModal();
+    }, 3000); // 3 seconds delay before showing
+  });
     </script>
 </body>
 </html>
