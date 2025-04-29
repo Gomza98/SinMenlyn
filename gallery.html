@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sin Menlyn - Indulge in the Forbidden</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQ[...]" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        body {
+   body {
             font-family:'Playfair Display', serif;
-            background-color: #000;
-            color: #fff;
+        background: #fff;
+	    background-size: cover;
+            color: #92162D;
             margin: 0;
             padding: 0;
             line-height: 1.6;
@@ -17,7 +19,8 @@
         }
 
         header {
-            background-color: #000;
+	    background: linear-gradient(45deg, #777, #bbb); /* Darker silver-grey gradient */
+	    background-size: cover;
             padding: 10px 20px;
             text-align: center;
             position: relative;
@@ -33,9 +36,33 @@
         }
 
         header p {
-            font-size: 1.1em;
-            color: #D4AF37;
-            margin: 0.5em 0;
+            
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #8b0000, #ff0000, #ff6666, #8b0000);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  text-shadow:
+    0 0 5px rgba(255, 0, 0, 0.4),
+    0 0 10px rgba(255, 0, 0, 0.3),
+    inset 1px 1px 0 #fff;
+  animation: shine 4s ease-in-out infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
         }
 
         .book-table-button {
@@ -60,8 +87,9 @@
         }
 
         .nav-container {
-            background-color: #111;
-            padding: 10px 20px;
+            background-color: #fff;
+	    background-size: cover;
+            padding: 20px 20px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
             margin-bottom: 1em;
             overflow-x: auto;
@@ -84,7 +112,7 @@
         }
 
         .nav-link {
-            color: #dcc298;
+            color: #92162D;
             text-decoration: none;
             font-size: 1.1em;
             transition: color 0.3s ease;
@@ -94,79 +122,18 @@
 
         .nav-link:hover {
             color: #fff;
-            background-color: #333;
+            background-color: #aaa; /*gray - light gray */
         }
 
-         .hero {
-    position: relative;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #feeb9c;
-    padding: 0 20px;
-    overflow: hidden;
-}
-
-.hero-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures video fills the container */
-    z-index: -1; /* Places video behind the text */
-}
-
-.hero-overlay {
-    position: relative;
-    z-index: 1;
-	width: 100%;
-    background: rgba(0, 0, 0, 0.0); /* Optional dark overlay for readability */
-    padding: 20px;
-    border-radius: 10px;
-}
-.hero-overlay h1 {
-    font-size: 10vw; /* Adjusts based on screen size */
-}
-
-.hero-overlay p {
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-top: 10px;
-    color: #feeb9c;
-    text-shadow: 0 0 10px #f3c063, 0 0 20px #f3c063, 0 0 40px #f3c063, 0 0 80px #f3c063;
-}
-
-
-        .cta-button {
-            background-color: #dcc298;
-            color: #000;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 30px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .cta-button:hover {
-            background-color: #fff;
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
-        }
-
+     
         .social-media {
             text-align: center;
             margin-top: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 5px;
         }
 
         .social-media a {
-            color: #dcc298;
+            color: #92162D;  /*passion red hex code*/
             font-size: 1.5em;
             margin: 0 10px;
             text-decoration: none;
@@ -177,6 +144,8 @@
             color: #e6c751;
         }
 
+        /*END OF HEADER AND NAV!!!!!! */
+	    
         .media-marquee-container {
             overflow: hidden;
             background-color: #fff;
@@ -218,454 +187,7 @@
             100% { transform: translateX(calc(-150px * 6)); }
         }
 
-        .specials {
-            width: 80%;
-            max-width: 1200px;
-            margin: 2em auto;
-            background-color: #222;
-            border-radius: 10px;
-            padding: 2em;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
-
-        .special-header {
-            color: #dcc298;
-            font-size: 2em;
-            margin-bottom: 1em;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-        }
-
-        .special-time {
-            font-size: 0.6em;
-            color: #ccc;
-            margin-top: 0.5em;
-        }
-
-        .specials img {
-            width: 100%;
-            max-height: 500px;
-            object-fit: cover;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        }
-
-        @media (max-width: 768px) {
-            .specials-container {
-                flex-direction: column;
-                gap: 1em;
-            }
-        }
-
-        .menu-section {
-            margin: 2em auto;
-            padding: 2em;
-            background-color: #222;
-            border-radius: 10px;
-            width: 80%;
-            max-width: 1200px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
-
-        .menu-section h2 {
-            color: #dcc298;
-            font-size: 2em;
-            margin-bottom: 1em;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-        }
-
-        .menu-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .menu-item {
-            background-color: #333;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease;
-        }
-
-        .menu-item:hover {
-            transform: translateY(-5px);
-        }
-
-        .menu-image {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            border-bottom: 2px solid #dcc298;
-        }
-
-        .menu-info {
-            padding: 15px;
-        }
-
-        .menu-name {
-            color: #dcc298;
-            font-size: 1.4em;
-            margin-bottom: 10px;
-        }
-
-        .menu-description {
-            color: #ccc;
-            margin-bottom: 10px;
-            font-size: 0.9em;
-        }
-
-        .menu-price {
-            color: #fff;
-            font-weight: bold;
-            font-size: 1.2em;
-        }
-
-        .menu-category {
-            margin-top: 40px;
-            margin-bottom: 20px;
-            color: #dcc298;
-            font-size: 1.6em;
-            border-bottom: 2px solid #D4AF37;
-            padding-bottom: 10px;
-        }
-
-        .events-section {
-            padding: 80px 0;
-            background-color: #0a0a0a;
-        }
-
-        .event-card {
-            background: linear-gradient(145deg, #111 0%, #222 100%);
-            border-radius: 10px;
-            margin-bottom: 30px;
-            padding: 30px;
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .event-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
-        }
-
-        .event-date {
-            background-color: #dcc298;
-            color: #ffffff;
-            font-weight: bold;
-            display: inline-block;
-            padding: 8px 15px;
-            border-radius: 30px;
-            margin-bottom: 15px;
-            align-self: flex-start;
-        }
-
-        .event-title {
-            font-size: 1.8rem;
-            color: #fff;
-            margin-bottom: 15px;
-        }
-
-        .event-description {
-            color: #ccc;
-            margin-bottom: 20px;
-            flex-grow: 1;
-        }
-	    .event-image {
-            width: 100%;
-            max-width: 1200px;
-            margin: 1em auto;
-            background-color: #222;
-            border-radius: 10px;
-            padding: 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
-
-        .event-button {
-            background-color: transparent;
-            color: #dcc298;
-            border: 2px solid #dcc298;
-            padding: 10px 20px;
-            border-radius: 30px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            align-self: flex-start;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .event-button:hover {
-            background-color: #dcc298;
-            color: #000;
-        }
-
-        	/*Featured Section*/
-		 .featured-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 10px;
-        }
-
-        .featured-card {
-            background-color: rgba(20, 20, 20, 0.8);
-            border-radius: 10px;
-            overflow: hidden;
-            transition: transform 0.3s, box-shadow 0.3s;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .featured-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
-        }
-
-        .featured-image {
-            height: 200px;
-            width: 100%;
-            object-fit: cover;
-        }
-
-        .featured-content {
-            padding: 25px;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .featured-title {
-            color: #dcc298;
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-        }
-
-        .featured-text {
-            color: #ddd;
-            margin-bottom: 20px;
-            flex-grow: 1;
-        }
-
-        .featured-link {
-            color:#dcc298;
-            text-decoration: none;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: color 0.3s;
-            align-self: flex-start;
-        }
-
-        .featured-link:hover {
-            color: #fff;
-        }
-        
-
-        .celebration-box {
-            background-color: #0a0a0a;
-            color: #ffffff;
-            padding: 4rem 2rem;
-            position: relative;
-        }
-
-        .celebration-box::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.8) 100%);
-            z-index: 1;
-        }
-
-        .celebration-container {
-            position: relative;
-            z-index: 2;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .celebration-header {
-            text-align: center;
-            margin-bottom: 3rem;
-            border-bottom: 2px solid #dcc298;
-            padding-bottom: 1.5rem;
-        }
-
-        .celebration-header h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-            color: #dcc298;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-        }
-
-        .celebration-header .tagline {
-            font-size: 1.2rem;
-            font-style: italic;
-            color: #a7a7a7;
-        }
-
-        .celebration-categories {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 2rem;
-        }
-
-        .celebration-category {
-            flex: 1;
-            min-width: 300px;
-            background-color: rgba(20, 20, 20, 0.8);
-            border: 1px solid #333;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .celebration-category:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.2);
-        }
-
-        .category-icon {
-            text-align: center;
-            padding: 1.5rem 0;
-            background: linear-gradient(45deg, #000000, #222222);
-        }
-
-        .category-icon i {
-            font-size: 2.5rem;
-            color: #dcc298;
-        }
-
-        .celebration-category h3 {
-            text-align: center;
-            padding: 1rem;
-            background-color: #dcc298;
-            color: #000;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin: 0;
-        }
-
-        .celebration-options {
-            padding: 1.5rem;
-        }
-
-        .celebration-option {
-            background-color: rgba(30, 30, 30, 0.7);
-            border-radius: 6px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            border-left: 4px solid #dcc298;
-            position: relative;
-            transition: transform 0.2s ease;
-        }
-
-        .celebration-option:hover {
-            transform: translateX(5px);
-        }
-
-        .celebration-option h4 {
-            color:#dcc298;
-            font-size: 1.4rem;
-            margin-top: 0;
-            margin-bottom: 1rem;
-            font-family: 'Playfair Display', serif;
-        }
-
-        .celebration-option p {
-            color: #e0e0e0;
-            font-size: 0.95rem;
-            line-height: 1.6;
-            margin-bottom: 1.5rem;
-        }
-
-        .price-tag {
-            display: inline-block;
-            background-color: #dcc298;
-            color: #000;
-            padding: 0.5rem 1rem;
-            font-weight: bold;
-            border-radius: 4px;
-            margin-bottom: 1rem;
-        }
-
-        .reserve-btn {
-            background-color: transparent;
-            color: #dcc298;
-            border: 2px solid #dcc298;
-            padding: 0.6rem 1.2rem;
-            cursor: pointer;
-            font-weight: 600;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-size: 0.9rem;
-        }
-
-        .reserve-btn:hover {
-            background-color: #dcc298;
-            color: #000;
-        }
-
-        .celebration-option.premium {
-            border-left: 4px solid #e5c100;
-            background-color: rgba(40, 40, 40, 0.8);
-        }
-
-        .celebration-option.elite {
-            border-left: 4px solid #ffd700;
-            background-color: rgba(50, 50, 50, 0.9);
-        }
-
-        .premium-badge, .elite-badge {
-            position: absolute;
-            top: 0;
-            right: 0;
-            background-color: #e5c100;
-            color: #000;
-            font-size: 0.7rem;
-            padding: 0.3rem 0.6rem;
-            font-weight: bold;
-            border-bottom-left-radius: 4px;
-        }
-
-        .elite-badge {
-            background-color: #ffd700;
-        }
-
-        @media (max-width: 768px) {
-            .celebration-categories {
-                flex-direction: column;
-            }
-
-            .celebration-category {
-                min-width: 100%;
-            }
-
-            .celebration-header h2 {
-                font-size: 2.5rem;
-            }
-        }
-
+       
         .back-to-top {
             position: fixed;
             bottom: 20px;
@@ -763,69 +285,6 @@
             background-color: #e6c751;
         }
 
-	  /* Upcoming Events Section */
-        .upcoming-events {
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #222;
-            border-radius: 10px;
-            width: 80%;
-            max-width: 900px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
-
-        .upcoming-events h2 {
-            color: #dcc298;
-            font-size: clamp(1.5em, 3vw, 2em);
-            margin-bottom: 15px;
-            text-align: center;
-        }
-
-        .event-list {
-            list-style-type: none;
-            padding: 0;
-            color: #eee;
-        }
-
-        .event-list li {
-            margin: 20px 0;
-            padding: 15px;
-            background-color: #333;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .event-list li:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
-        }
-
-        .event-title {
-            font-size: clamp(1.1em, 2.2vw, 1.4em);
-            color: #dcc298;
-            margin-bottom: 5px;
-        }
-
-        .event-date {
-            font-size: clamp(0.8em, 1.6vw, 1em);
-            color: #aaa;
-        }
-
-        .event-description {
-            font-size: clamp(0.9em, 1.8vw, 1.1em);
-            color: #eee;
-        }
-
-	h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1rem;
-            margin-bottom: 0.5rem;
-            color: #dcc298;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
 /*location*/
 .location {
     display: flex;
@@ -833,8 +292,8 @@
     justify-content: center;
     gap: 80px; /* Space between map and text */
     padding: 20px;
-    background-color: #000; /* dark background */
-    border-radius: 10px;
+    background-color: #fff; /* dark background, now white */
+   
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     max-width: 1400px;
     margin: auto;
@@ -842,13 +301,13 @@
 .location-map iframe {
     width: 450px;
     height: 300px;
-    border-radius: 10px;
+    border-radius: 0px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .location-text {
     font-size: 18px;
-    color: #333;
+    color: #000000;
     line-height: 1.6;
     max-width: 300px;
     text-align: left;
@@ -858,6 +317,15 @@
     margin: 5px 0;
     font-weight: 500;
 }
+.location-text h2 {
+    color: #92162D;
+}
+.location-text i {
+  color: #92162D;
+  margin-right: 8px;
+}
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -895,14 +363,14 @@
             box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
         }
 	.message{
-    	color: #dcc298;
+    	color: #92162D;
         }
     </style>
 </head>
 <body>
-    <header id="top">
- <img src="images/logo.jpg" alt="Sin Menlyn Logo" class="logo"> 
-	    <div class = "top-message" id="message">The epicenter of nightlife entertainment</div>
+          <header id="top">
+ <img src="images/SIN RED LOGO(1).png" alt="Sin Menlyn Logo" class="logo">  
+	    <div class = "top-message" id="message"><p>The epicenter of nightlife entertainment</p></div>
 	     
    </header>
 
