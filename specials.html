@@ -471,47 +471,23 @@
             color: #000;
         }
 
-      .celebration-option.premium {
-  position: relative;
-  background-color: rgba(40, 40, 40, 0.8);
-  padding-left: 0px; /* Make space for the gradient strip */
-  overflow: hidden;
-}
-
-.celebration-option.premium::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4px;
-  height: 100%;
-  background: linear-gradient(45deg, #e5c100, #fff799); /* A lighter gold gradient */
-}
+   	  .celebration-option.elite {
+            border-left: 4px linear-gradient(45deg, #d4af37, #f5d76e);
+            background-color: rgba(50, 50, 50, 0.9);
+        }
 
 
-      .celebration-option.elite {
-  position: relative;
-  background-color: rgba(50, 50, 50, 0.9);
-  padding-left: 0px; /* Space for the gradient border */
-  overflow: hidden;   /* Keeps pseudo-element inside */
-}
-
-.celebration-option.elite::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4px;
-  height: 100%;
-  background: linear-gradient(45deg, #d4af37, #f5d76e);
-}
+   	.celebration-option.premium {
+            border-left: 4px solid #e5c100;
+            background-color: rgba(40, 40, 40, 0.8);
+        }
 
 
         .premium-badge, .elite-badge {
             position: absolute;
             top: 0;
             right: 0;
-            background-color: #e5c100;
+            background: linear-gradient(45deg, #d4af37, #f5d76e);
             color: #92162D;
             font-size: 0.7rem;
             padding: 0.3rem 0.6rem;
