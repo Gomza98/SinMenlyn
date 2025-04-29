@@ -866,9 +866,8 @@
     justify-content: center;
     gap: 80px; /* Space between map and text */
     padding: 20px;
-    background: linear-gradient(45deg, #777, #bbb); /* Darker silver-grey gradient */
-    background-size: cover;
-    border-radius: 10px;
+    background-color: #fff; /* dark background, now white */
+   
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     max-width: 1400px;
     margin: auto;
@@ -882,7 +881,7 @@
 
 .location-text {
     font-size: 18px;
-    color: #333;
+    color: #000000;
     line-height: 1.6;
     max-width: 300px;
     text-align: left;
@@ -892,6 +891,15 @@
     margin: 5px 0;
     font-weight: 500;
 }
+.location-text h2 {
+    color: #92162D;
+}
+.location-text i {
+  color: #92162D;
+  margin-right: 8px;
+}
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -929,9 +937,8 @@
             box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
         }
 	.message{
-    	color: #dcc298;
+    	color: #92162D;
         }
-		
 		
 		
  /* Birthday Modal Specific Styling */
@@ -1066,24 +1073,18 @@
 </div>
 
 <div class = "location-map"><iframe 
-   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.6046011896265!2d28.27550927523164!3d-25.783620577338194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9561c734bcc3e5%3A0x9c685f0e12bba657!2sSIN%20MENLYN!5e0!3m2!1sen!2sza!4v1741686330268!5m2!1sen!2sza" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"padding:"10px">	
+   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.6046011896265!2d28.27550927523164!3d-25.783620577338194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9561c734bcc3e5%3A0x9c685f0e12bba657!2sSIN%20MENLYN!5e0!3m2!1sen!2sza!4v1741686330268!5m2!1sen!2sza" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"padding:"10px">	
 </iframe>
 </div>
-<div class = "location-text">
-	<h2> Find us Here
-	</h2>
-	<p>
-	SIN MENLYN
-	</p>
-	<p>
-Shop 2A, Menlyn Piazza, Menlyn, Pretoria, 0081
-	</p>
-	<p>Contact : 063 794 1057
-	</p>
-	<p>
-	Open Friday - Sunday from  10PM – 6AM
-	</p>
+<div class="location-text">
+  <h2>Find us Here</h2>
+  
+  <p>SIN MENLYN</p>
+  <p><i class="fas fa-location-dot"></i> Shop 2A, Menlyn Piazza, Menlyn, Pretoria, 0081</p>
+  <p><i class="fas fa-phone"></i> Contact: 063 794 1057</p>
+  <p><i class="fas fa-clock"></i> Open Friday - Sunday from 10PM – 6AM</p>
 </div>
+
 </div>
 
 	
