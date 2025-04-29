@@ -470,15 +470,41 @@
             color: #000;
         }
 
-        .celebration-option.premium {
-            border-left: 4px solid #e5c100;
-            background-color: rgba(40, 40, 40, 0.8);
-        }
+      .celebration-option.premium {
+  position: relative;
+  background-color: rgba(40, 40, 40, 0.8);
+  padding-left: 16px; /* Make space for the gradient strip */
+  overflow: hidden;
+}
 
-        .celebration-option.elite {
-            border-left: 4px solid #ffd700;
-            background-color: rgba(50, 50, 50, 0.9);
-        }
+.celebration-option.premium::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(45deg, #e5c100, #fff799); /* A lighter gold gradient */
+}
+
+
+      .celebration-option.elite {
+  position: relative;
+  background-color: rgba(50, 50, 50, 0.9);
+  padding-left: 16px; /* Space for the gradient border */
+  overflow: hidden;   /* Keeps pseudo-element inside */
+}
+
+.celebration-option.elite::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(45deg, #d4af37, #f5d76e);
+}
+
 
         .premium-badge, .elite-badge {
             position: absolute;
