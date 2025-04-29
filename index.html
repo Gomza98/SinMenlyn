@@ -289,81 +289,7 @@
             }
         }
 
-        .menu-section {
-            margin: 2em auto;
-            padding: 2em;
-            background-color: #222;
-            border-radius: 10px;
-            width: 80%;
-            max-width: 1200px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
-
-        .menu-section h2 {
-            color: #dcc298;
-            font-size: 2em;
-            margin-bottom: 1em;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-        }
-
-        .menu-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .menu-item {
-            background-color: #333;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease;
-        }
-
-        .menu-item:hover {
-            transform: translateY(-5px);
-        }
-
-        .menu-image {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            border-bottom: 2px solid #dcc298;
-        }
-
-        .menu-info {
-            padding: 15px;
-        }
-
-        .menu-name {
-            color: #dcc298;
-            font-size: 1.4em;
-            margin-bottom: 10px;
-        }
-
-        .menu-description {
-            color: #ccc;
-            margin-bottom: 10px;
-            font-size: 0.9em;
-        }
-
-        .menu-price {
-            color: #fff;
-            font-weight: bold;
-            font-size: 1.2em;
-        }
-
-        .menu-category {
-            margin-top: 40px;
-            margin-bottom: 20px;
-            color: #dcc298;
-            font-size: 1.6em;
-            border-bottom: 2px solid #D4AF37;
-            padding-bottom: 10px;
-        }
-
+        
         .events-section {
             padding: 80px 0;
             background-color: #0a0a0a;
@@ -439,7 +365,7 @@
             color: #000;
         }
 
-        	/*Featured Section*/
+        /*Featured Section*/
 		 .featured-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -798,60 +724,7 @@
             background-color: #e6c751;
         }
 
-	  /* Upcoming Events Section */
-        .upcoming-events {
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #222;
-            border-radius: 10px;
-            width: 80%;
-            max-width: 900px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
-
-        .upcoming-events h2 {
-            color: #dcc298;
-            font-size: clamp(1.5em, 3vw, 2em);
-            margin-bottom: 15px;
-            text-align: center;
-        }
-
-        .event-list {
-            list-style-type: none;
-            padding: 0;
-            color: #eee;
-        }
-
-        .event-list li {
-            margin: 20px 0;
-            padding: 15px;
-            background-color: #333;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .event-list li:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
-        }
-
-        .event-title {
-            font-size: clamp(1.1em, 2.2vw, 1.4em);
-            color: #dcc298;
-            margin-bottom: 5px;
-        }
-
-        .event-date {
-            font-size: clamp(0.8em, 1.6vw, 1em);
-            color: #aaa;
-        }
-
-        .event-description {
-            font-size: clamp(0.9em, 1.8vw, 1.1em);
-            color: #eee;
-        }
-
+	
 	h2 {
             font-family: 'Playfair Display', serif;
             font-size: 1rem;
@@ -945,7 +818,7 @@
 		
  /* Birthday Modal Specific Styling */
   #birthdayModal .modal-content {
-    border: 2px solid #dcc298;
+    border: 2px #92162D;
     animation: fadeIn 0.5s;
   }
   
@@ -955,8 +828,8 @@
   }
   
   #birthdayModal .modal-button {
-    background-color: #dcc298;
-    color: #000;
+    background-color:#000000;
+    color: #fff;
     padding: 12px 25px;
     border: none;
     border-radius: 30px;
@@ -972,13 +845,13 @@
   }
   
   #birthdayModal .modal-button:hover {
-    background-color: #e6c751;
+    background-color:#92162D;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
   }
   
   #birthdayModal h2 {
-    color: #dcc298;
+    color:#92162D;
     margin-bottom: 15px;
   }
 </style>
@@ -1069,7 +942,7 @@
     </div>
 
 <div class ="location" >
-<h2>Location</h2>
+<h2 style="color:#92162D;">Location</h2>
 <div>
 <img src = "images/piaza.jpg" alt="outside" width="400" height="300" >
 </div>
@@ -1078,7 +951,7 @@
    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.6046011896265!2d28.27550927523164!3d-25.783620577338194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9561c734bcc3e5%3A0x9c685f0e12bba657!2sSIN%20MENLYN!5e0!3m2!1sen!2sza!4v1741686330268!5m2!1sen!2sza" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"padding:"10px">	
 </iframe>
 </div>
-<div class="location-text">
+<div class="location-text" >
   <h2>Find us Here</h2>
   
   <p>SIN MENLYN</p>
