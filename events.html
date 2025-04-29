@@ -204,7 +204,7 @@
         .event-button {
             background-color: #92162D;
             color: #fff;
-            border: 2px solid #dcc298;
+            border: 2px solid #92162D;;
             padding: 10px 20px;
             border-radius: 30px;
             font-weight: bold;
@@ -222,264 +222,7 @@
             color: #000;
         }
 
-        	/*Featured Section*/
-		 .featured-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 10px;
-        }
-
-        .featured-card {
-            background-color: rgba(20, 20, 20, 0.8);
-            border-radius: 10px;
-            overflow: hidden;
-            transition: transform 0.3s, box-shadow 0.3s;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .featured-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
-        }
-
-        .featured-image {
-            height: 200px;
-            width: 100%;
-            object-fit: cover;
-        }
-
-        .featured-content {
-            padding: 25px;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .featured-title {
-            color: #dcc298;
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-        }
-
-        .featured-text {
-            color: #ddd;
-            margin-bottom: 20px;
-            flex-grow: 1;
-        }
-
-        .featured-link {
-            color:#dcc298;
-            text-decoration: none;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: color 0.3s;
-            align-self: flex-start;
-        }
-
-        .featured-link:hover {
-            color: #fff;
-        }
-        
-
-        .celebration-box {
-            background-color: #0a0a0a;
-            color: #ffffff;
-            padding: 4rem 2rem;
-            position: relative;
-        }
-
-        .celebration-box::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.8) 100%);
-            z-index: 1;
-        }
-
-        .celebration-container {
-            position: relative;
-            z-index: 2;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .celebration-header {
-            text-align: center;
-            margin-bottom: 3rem;
-            border-bottom: 2px solid #dcc298;
-            padding-bottom: 1.5rem;
-        }
-
-        .celebration-header h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-            color: #dcc298;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-        }
-
-        .celebration-header .tagline {
-            font-size: 1.2rem;
-            font-style: italic;
-            color: #a7a7a7;
-        }
-
-        .celebration-categories {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 2rem;
-        }
-
-        .celebration-category {
-            flex: 1;
-            min-width: 300px;
-            background-color: rgba(20, 20, 20, 0.8);
-            border: 1px solid #333;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .celebration-category:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.2);
-        }
-
-        .category-icon {
-            text-align: center;
-            padding: 1.5rem 0;
-            background: linear-gradient(45deg, #000000, #222222);
-        }
-
-        .category-icon i {
-            font-size: 2.5rem;
-            color: #dcc298;
-        }
-
-        .celebration-category h3 {
-            text-align: center;
-            padding: 1rem;
-            background-color: #dcc298;
-            color: #000;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin: 0;
-        }
-
-        .celebration-options {
-            padding: 1.5rem;
-        }
-
-        .celebration-option {
-            background-color: rgba(30, 30, 30, 0.7);
-            border-radius: 6px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            border-left: 4px solid #dcc298;
-            position: relative;
-            transition: transform 0.2s ease;
-        }
-
-        .celebration-option:hover {
-            transform: translateX(5px);
-        }
-
-        .celebration-option h4 {
-            color:#dcc298;
-            font-size: 1.4rem;
-            margin-top: 0;
-            margin-bottom: 1rem;
-            font-family: 'Playfair Display', serif;
-        }
-
-        .celebration-option p {
-            color: #e0e0e0;
-            font-size: 0.95rem;
-            line-height: 1.6;
-            margin-bottom: 1.5rem;
-        }
-
-        .price-tag {
-            display: inline-block;
-            background-color: #dcc298;
-            color: #000;
-            padding: 0.5rem 1rem;
-            font-weight: bold;
-            border-radius: 4px;
-            margin-bottom: 1rem;
-        }
-
-        .reserve-btn {
-            background-color: transparent;
-            color: #dcc298;
-            border: 2px solid #dcc298;
-            padding: 0.6rem 1.2rem;
-            cursor: pointer;
-            font-weight: 600;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-size: 0.9rem;
-        }
-
-        .reserve-btn:hover {
-            background-color: #dcc298;
-            color: #000;
-        }
-
-        .celebration-option.premium {
-            border-left: 4px solid #e5c100;
-            background-color: rgba(40, 40, 40, 0.8);
-        }
-
-        .celebration-option.elite {
-            border-left: 4px solid #ffd700;
-            background-color: rgba(50, 50, 50, 0.9);
-        }
-
-        .premium-badge, .elite-badge {
-            position: absolute;
-            top: 0;
-            right: 0;
-            background-color: #e5c100;
-            color: #000;
-            font-size: 0.7rem;
-            padding: 0.3rem 0.6rem;
-            font-weight: bold;
-            border-bottom-left-radius: 4px;
-        }
-
-        .elite-badge {
-            background-color: #ffd700;
-        }
-
-        @media (max-width: 768px) {
-            .celebration-categories {
-                flex-direction: column;
-            }
-
-            .celebration-category {
-                min-width: 100%;
-            }
-
-            .celebration-header h2 {
-                font-size: 2.5rem;
-            }
-        }
-
+        	
         .back-to-top {
             position: fixed;
             bottom: 20px;
@@ -747,13 +490,13 @@
         <ul class="event-list">
         
             <li>
-                <h3 class="event-title" style="color:#fff;">This Weekend</h3>
+                <h3 class="event-title" style="color:#fff;">This Weekend @SinMenlyn</h3>
                 <p class="event-date"style="color:#fff;">May 2025</p>
 		<img src="images/wednesday.jpg" alt="This.jpg" class="event-image">
 		    <img src="images/friday.jpg" alt="This.jpg" class="event-image">
 		      <p class="event-description">Join us for a world class performance by superstar DJs</p>
                 <p class="event-description">Free entry. Drink specials from 22:00 - 00:00!</p>
-		      <button class="reserve-btn" onclick="openModal('bookingModal')" style="background-color:#92162D; color:#fff;">
+		      <button class="reserve-btn" onclick="openModal('bookingModal')" style="background-color:#92162D; color:#fff;">Book Your Seat</button>
             </li>
 	   
         </ul>
@@ -771,7 +514,8 @@
 		<img src="images/logo.jpg" alt="logo.jpg" class="event-image">
 		      <p class="event-description">
   🎉 Sin Turns 1! Celebrate a year of unmatched nightlife, unforgettable memories, and pure indulgence. 
-  Join us for an iconic anniversary affair where luxury meets energy — featuring top-tier entertainment, 
+ </p>
+<p> Join us for an iconic anniversary affair where luxury meets energy — featuring top-tier entertainment, 
   exclusive surprises, and a night only Sin could deliver. One year down, forever to go.
 </p>
 
@@ -797,7 +541,7 @@
 
 	
 <div class ="location" >
-<h2>Location</h2>
+<h2 style=color"#92162D;">Location</h2>
 <div>
 <img src = "images/piaza.jpg" alt="outside" width="400" height="300" >
 </div>
@@ -806,10 +550,15 @@
    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.6046011896265!2d28.27550927523164!3d-25.783620577338194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9561c734bcc3e5%3A0x9c685f0e12bba657!2sSIN%20MENLYN!5e0!3m2!1sen!2sza!4v1741686330268!5m2!1sen!2sza" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"padding:"10px">	
 </iframe>
 </div>
-<div class = "location-text">
-	<h2> Find us Here
-	</h2>
+<div class="location-text" >
+  <h2>Find us Here</h2>
+  
+  <p>SIN MENLYN</p>
+  <p><i class="fas fa-location-dot"></i> Shop 2A, Menlyn Piazza, Menlyn, Pretoria, 0081</p>
+  <p><i class="fas fa-phone"></i> Contact: 063 794 1057</p>
+  <p><i class="fas fa-clock"></i> Open Friday - Sunday from 10PM – 6AM</p>
 </div>
+
 </div>
 
 	
