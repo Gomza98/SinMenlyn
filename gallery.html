@@ -69,6 +69,28 @@
             100% { background-position: 0% 50%; }
         }
 
+	h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 1rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, var(--primary), #C0392B, var(--highlight), var(--primary));
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            text-shadow:
+                0 0 5px rgba(176, 0, 32, 0.4),
+                0 0 10px rgba(176, 0, 32, 0.3),
+                inset 1px 1px 0 #fff;
+            animation: shine 4s ease-in-out infinite;
+        }
+
+        @keyframes shine {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
         .book-table-button {
             background-color: var(--secondary);
             color: var(--background);
